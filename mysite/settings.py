@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,9 +76,9 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        "NAME": "djangodb",
-        "USER": "admin_db",
-        "PASSWORD": "Admin_db@10063&&",
+        "NAME": "project_app_db",
+        "USER": "postgres",
+        "PASSWORD": "Postgres@10063&&",
         "HOST": "localhost",
         "PORT": "5432",
     }
@@ -108,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'EAT'
 
 USE_I18N = True
 
